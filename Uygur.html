@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <title>ArıkanTarih </title> 
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"> 
+  <link rel="stylesheet" href="./style.css"> 
+ <style type="text/css" id="dcoder_stylesheet">*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #;
+ background-image: linear-gradient(to top, #e14fad 0%, #f9d423 100%);
+  min-height: 100vh;
+  font-family: 'Open Sans',sans-serif;
+  display: flex;
+}
+
+.blog-slider {
+  width: 95%;
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 25px;
+  border-radius: 25px;
+  height: 400px;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 992px) {
+  .blog-slider {
+    max-width: 680px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .blog-slider {
+    min-height: 500px;
+    height: auto;
+    margin: 180px auto;
+  }
+}
+@media screen and (max-height: 500px) and (min-width: 992px) {
+  .blog-slider {
+    height: 350px;
+  }
+}
+.blog-slider__item {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .blog-slider__item {
+    flex-direction: column;
+  }
+}
+.blog-slider__item.swiper-slide-active .blog-slider__img img {
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > * {
+  opacity: 1;
+  transform: none;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(1) {
+  transition-delay: 0.3s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(3) {
+  transition-delay: 0.5s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(4) {
+  transition-delay: 0.6s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(5) {
+  transition-delay: 0.7s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(6) {
+  transition-delay: 0.8s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(7) {
+  transition-delay: 0.9s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(8) {
+  transition-delay: 1s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(9) {
+  transition-delay: 1.1s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(10) {
+  transition-delay: 1.2s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(11) {
+  transition-delay: 1.3s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(12) {
+  transition-delay: 1.4s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(13) {
+  transition-delay: 1.5s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(14) {
+  transition-delay: 1.6s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(15) {
+  transition-delay: 1.7s;
+}
+.blog-slider__img {
+  width: 300px;
+  flex-shrink: 0;
+  height: 300px;
+  background-image: linear-gradient(147deg, #000000 0%, #000000 74%);
+  box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
+  border-radius: 20px;
+  transform: translateX(-80px);
+  overflow: hidden;
+}
+.blog-slider__img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+.blog-slider__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .blog-slider__img {
+    transform: translateY(-50%);
+    width: 90%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .blog-slider__img {
+    width: 95%;
+  }
+}
+@media screen and (max-height: 500px) and (min-width: 992px) {
+  .blog-slider__img {
+    height: 270px;
+  }
+}
+.blog-slider__content {
+  padding-right: 25px;
+}
+@media screen and (max-width: 768px) {
+  .blog-slider__content {
+    margin-top: -80px;
+    text-align: center;
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .blog-slider__content {
+    padding: 0;
+  }
+}
+.blog-slider__content > * {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: all 0.4s;
+}
+.blog-slider__code {
+  color: #000000;
+  margin-bottom: 15px;
+  display: block;
+  font-weight: 500;
+}
+.blog-slider__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.blog-slider__text {
+  color: #000000;
+  margin-bottom: 30px;
+  line-height: 1.5em;
+}
+.blog-slider__button {
+  display: inline-flex;
+  background-image: linear-gradient(147deg, #1f2ca7 0%, #1f2ca7 74%);
+  padding: 15px 35px;
+  border-radius: 50px;
+  color: #fff;
+  box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4);
+  text-decoration: none;
+  font-weight: 500;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 576px) {
+  .blog-slider__button {
+    width: 100%;
+  }
+}
+.blog-slider .swiper-container-horizontal > .swiper-pagination-bullets, .blog-slider .swiper-pagination-custom, .blog-slider .swiper-pagination-fraction {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+.blog-slider__pagination {
+  position: absolute;
+  z-index: 21;
+  right: 20px;
+  width: 11px !important;
+  text-align: center;
+  left: auto !important;
+  top: 50%;
+  bottom: auto !important;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 768px) {
+  .blog-slider__pagination {
+    transform: translateX(-50%);
+    left: 50% !important;
+    top: 205px;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 8px 0;
+}
+@media screen and (max-width: 768px) {
+  .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 5px;
+  }
+}
+.blog-slider__pagination .swiper-pagination-bullet {
+  width: 11px;
+  height: 11px;
+  display: block;
+  border-radius: 10px;
+  background: #000000;
+  opacity: 0.2;
+  transition: all 0.3s;
+}
+.blog-slider__pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #000000;
+  height: 30px;
+}
+@media screen and (max-width: 768px) {
+  .blog-slider__pagination .swiper-pagination-bullet-active {
+    height: 11px;
+    width: 30px;
+  }
+}</style></head> 
+ <body> 
+  <div class="blog-slider"> 
+   <div class="blog-slider__wrp swiper-wrapper"> 
+    <div class="blog-slider__item swiper-slide"> 
+     <div class="blog-slider__img"> 
+      <img src="https://r.resimlink.com/WVCaMHwobRY.jpg" alt=""> 
+     </div> 
+     <div class="blog-slider__content"> <span class="blog-slider__code">Yaşam Bilinmiyor</span> 
+      <div class="blog-slider__title">
+        İlk Hükümdar Kutluk Bilge Kül Kağan 
+      </div> 
+      <div class="blog-slider__text">
+        Kutluk Bilge Kül Kağan (Çince: 骨咄禄毗伽阙可汗Gǔ duō lù Pí jiā Quē Kè hán veya Guli Peiluo), 744'te Uygur Kağanlığı'nı kuran devlet adamı. Uygur Kağanlığı'nı 744'ten 747'ye kadar yönetmiştir. Uygurları oluşturan dokuz boydan, hükümdar ailesinin mensup olduğu Yaglakar uruğundandır. Bilge Kül Kağan'ın adı Karabalgasun Yazıtı'nın Çince metninde Kutlug Boyla şeklinde geçmektedir. Kağan olduktan sonra bugünkü Karabalsagun olarak bilinen yerde başkent olarak inşa ettirdiği Ordu-Balık kenti Türklerin kurduğu ilk kenttir. Böylece Türklerin kutsal başkenti Ötüken başkentliğini kaybetmiş, Türkler yerleşimlerini Orhun Nehri'nin dış havzasındaki yamaçlardan bizzat nehrin yatak boylarına taşımıştır. 
+      </div> <a href="#" class="blog-slider__button">Ekranı Kaydır</a> 
+     </div> 
+    </div> 
+    <div class="blog-slider__item swiper-slide"> 
+     <div class="blog-slider__img"> 
+      <img src="https://r.resimlink.com/WVCaMHwobRY.jpg" alt=""> 
+     </div> 
+     <div class="blog-slider__content"> <span class="blog-slider__code">Yaşam Bilinmiyor</span> 
+      <div class="blog-slider__title">
+        Bayan Çor Kağan 
+      </div> 
+      <div class="blog-slider__text">
+        Bayan Çor Kağan (ayrıca Moyan Çor Kağan) (Çince: 藥羅葛磨延啜; pinyin: Yàolúogě Mòyánchùo), 747 – 759 arasında Uygur Kağanlığı'nı yöneten kağan. Resmî olarak "Täŋridä Bolmiš İl İtmiš Bilgä Kaγan" yani "Tanrı Tarafından Ülke (İl) Etmiş Bilge Kağan" unvanını kullanmıştır . Tang Hanedanı tarafından kendisine Yingwuweiyuanpiqiejuo Han (英武威遠毗伽闕可汗) veya kısaca Yingwu Han (英武可汗) unvanı verilmiştir. Tahta geçmeden önceki kişisel adı Çabış Tigin'dir. Kendisinden sonra tahta oğlu Bögü Tigin (759 – 779) çıkmıştır. 
+      </div> <a href="#" class="blog-slider__button">Ekranı Kaydır</a> 
+     </div> 
+    </div> 
+    <div class="blog-slider__item swiper-slide"> 
+     <div class="blog-slider__img"> 
+      <img src="https://r.resimlink.com/WVCaMHwobRY.jpg" alt=""> 
+     </div> 
+     <div class="blog-slider__content"> <span class="blog-slider__code">Yaşam Bilinmiyor</span> 
+      <div class="blog-slider__title">
+        Böğü Kağan 
+      </div> 
+      <div class="blog-slider__text">
+        Bögü Kağan veya Buğu Kağan (Çince: 牟羽可汗, Pinyin: móuyǔ kěhàn, Wade-Giles: mou-yü ko'han, Orta Çağ Çincesi: Guangyun: mĭəu˩-ĭu˥ kʰɑ˥-ɣɑn˩˥) veya Tengri Kağan (登里可汗, dēnglǐ kěhàn, teng-li ko'han) ve daha sonra Alp Külüg Bilge Kağan (英義建功毘伽可汗, Eski Türkçe tam unvan: Täŋridä qut bolmiš il tutmiš alp külüg bilgä qaγan, Türkiye Türkçesi: Tanrıda kut bulmış il tutmuş alp külüg bilge kağan[1]), 759–779 yılları arasında Uygur Kağanlığının kağanı olmuştur. Tarkan Bögü 761 yılında Soğdlardan aldığı Mani dini'ni devletin resmi dini olarak ilan etmiş, böylece Mani dini'nin en parlak dönemini başlatmıştır. 
+      </div> <a href="#" class="blog-slider__button">Ekranı Kaydır</a> 
+     </div> 
+    </div> 
+    <div class="blog-slider__item swiper-slide"> 
+     <div class="blog-slider__img"> 
+      <img src="https://r.resimlink.com/WVCaMHwobRY.jpg" alt=""> 
+     </div> 
+     <div class="blog-slider__content"> <span class="blog-slider__code">Ölüm 790</span> 
+      <div class="blog-slider__title">
+        Külüğ Baga Kağan 
+      </div> 
+      <div class="blog-slider__text">
+        Külüg Baga Kağan, Külüg Bilge Kağan veya Tolosu, Tun Baga Tarkan'nın ölümünden sonra Uygur Kağanlığı'nı 789-790 arasında yöneten kağandır. Babası Tun Baga Tarkan'dır. Uygur tahtında bir yıl gibi kısa bir süre kalabilmiştir. Külüg, 790'da kardeşi veya eşi E (葉) tarafından öldürülmüştür. İsmi, Karabalsagun Yazıtı'nda, yaptığı töre reformları sebebiyle geçmektedir. 
+      </div> <a href="#" class="blog-slider__button">Ekranı Kaydır</a> 
+     </div> 
+    </div> 
+    <div class="blog-slider__item swiper-slide"> 
+     <div class="blog-slider__img"> 
+      <img src="https://r.resimlink.com/WVCaMHwobRY.jpg" alt=""> 
+     </div> 
+     <div class="blog-slider__content"> <span class="blog-slider__code">Yaşam Bilinmiyor</span> 
+      <div class="blog-slider__title">
+        Ur Çor Kağan 
+      </div> 
+      <div class="blog-slider__text">
+        Ur Çor Kağan, An͡gçı Kağan, Ay Çor veya Ur Beg, babası Külüg Bilge'nin kısa süreli saltanatından sonra 790'da Uygur Kağanlığı tahtına çıkan Uygur-Türk kağanı. 790-795 arasında Uygur Kağanlığı'nı yönetmiştir. Kağanlığı boyunca küçük yaşı nedeniyle devlete aygucı İl Ögesi Inançu Bilge hâkim olmuş, Ur Çor'u himayesine almıştır. 
+      </div> <a href="#" class="blog-slider__button">Ekranı Kaydır</a> 
+     </div> 
+    </div> 
+    <div class="blog-slider__item swiper-slide"> 
+     <div class="blog-slider__img"> 
+      <img src="https://r.resimlink.com/WVCaMHwobRY.jpg" alt=""> 
+     </div> 
+     <div class="blog-slider__content"> <span class="blog-slider__code">Yaşam Bilinmiyor</span> 
+      <div class="blog-slider__title">
+        Kutluk Bilge Kağan 
+      </div> 
+      <div class="blog-slider__text">
+        Kutluk Bilge Kağan veya Gök Kağan, Ur Çor Kağan'ın ölümünden sonra Uygur Kağanlığı tahtına geçen Uygur hükümdarıdır. Liyakatli yönetimi nedeniyle kendisinden Karabalsagun Yazıtı'nda Kök Kağan (Gök Kağan) olarak bahsedilmektedir. Genç yaşta ölen Ur Çor, kendisinden sonra bir taht varisi bırakmadığı için, ülke içerisinde yaşanan karışıklık sonucunda Ediz uruğundan bir tudun olan olan Kutluk Bilge, Uygur tahtına oturmayı başarmıştır. Ancak Çin kaynaklarındaki bu bilgi, Karabalsagun Yazıtı'nda doğrulanmamakta ve Kutluk'un bir tigin olduğu söylenmektedir. Aynı zamanda bu yazıtta, Kutluk'un tahta geçiş nedeni; o dönemdeki devlet adamlarının içerisindeki en yaşlı ve liyakatli tudun olmasına bağlanmaktadır. Buna göre, Türk Toyu'nun kararıyla tahta çıkan Kutluk, Uygurların toy seçimiyle iş başına gelen ilk kağanıdır. 
+      </div> <a href="#" class="blog-slider__button">Ekranı Kaydır</a> 
+     </div> 
+    </div> 
+    <div class="blog-slider__item swiper-slide"> 
+     <div class="blog-slider__img"> 
+      <img src="https://r.resimlink.com/WVCaMHwobRY.jpg" alt=""> 
+     </div> 
+     <div class="blog-slider__content"> <span class="blog-slider__code">?</span> 
+      <div class="blog-slider__title">
+        Alp Külüp Bilge Kağan 
+      </div> 
+      <div class="blog-slider__text">
+        Alp Külüg Bilge Kağan, 805-808 arasında Uygur Kağanlığı'nı yöneten Uygur kağanı. Tanrıda Uluğ Bolmış Alp Kutluk Bilge Kağan'ın vârisi olarak toplanan Türk Toyu tarafından tahta çıkarılmıştır. Çin kaynaklarında kendisinden 滕里可汗 yani Tengri Kağan olarak bahsedilmektedir. 808 yılına kadar iktidarda kalan bu hükümdar yerini Alp Bilge Kagan’a bırakmıştır. kendisinden önceki kağanın siyasetini devam ettirmiş ve ülkenin iktisadi kalkınmasına önem verip döneminin şartlarına nazaran Uygur Kağanlığı'nda nispeten bir refah dönemi başlatmıştır. Bu dönemde İç Asya’nın önemli ticaret merkezleriyle bağlantı sağlanmıştır. 
+      </div> <a href="#" class="blog-slider__button">Ekranı Kaydır</a> 
+     </div> 
+    </div> 
+    <div class="blog-slider__item swiper-slide"> 
+     <div class="blog-slider__img"> 
+      <img src="https://r.resimlink.com/WVCaMHwobRY.jpg" alt=""> 
+     </div> 
+     <div class="blog-slider__content"> <span class="blog-slider__code">?</span> 
+      <div class="blog-slider__title">
+        Küçlüğ Bilge Kağan 
+      </div> 
+      <div class="blog-slider__text">
+        Küçlüg Bilge Kağan, 821-824 yılları arasında babası Alp Bilge Kağan'ın ölümünden sonra tahta geçen Uygur kağanıdır. Hakkındaki bilgiler, Çin kaynakları ve Karabalasagun Yazıtı'ndan elde edilmiştir. Karabalasagun Yazıtı'na göre adı "Tengride Kut Bolmış Küçlüg Bilge Kağan"dır. Küçlüg Bilge Kagan, Uygur kağanlığının iç durumunu düzeltmek için samimi olarak gayret göstermiştir. Özellikle Uygur-Çin münâsebetlerine büyük önem vermiştir. Ancak bu sayede kağanın döneminde ülkede iktisadi bir zenginlik oluşsa da, ülke varlıklarının özellikle gereksiz düğün masraflarıyla harcanması sonucu Uygur Kağanlığı gerileme dönemine girmiştir. 
+      </div> <a href="#" class="blog-slider__button">Ekranı Kaydır</a> 
+     </div> 
+    </div> 
+    <div class="blog-slider__item swiper-slide"> 
+     <div class="blog-slider__img"> 
+      <img src="https://r.resimlink.com/WVCaMHwobRY.jpg" alt=""> 
+     </div> 
+     <div class="blog-slider__content"> <span class="blog-slider__code">?</span> 
+      <div class="blog-slider__title">
+        Kasar Kağan 
+      </div> 
+      <div class="blog-slider__text">
+        Kasar Kağan, Kasar (Hesa) Tuğluk (Teley) Kağan ya da Çin kaynaklarına göre Çyaoli Kehan Hesa Teley , 824-832 yılları arasında Uygur Kağanlığı'nı yöneten hükümdardır. Çincedeki Çyaoli transliterasyonunun Türkçe aslı açık değildir. Kasar Kağan Dönemi, geniş sınırlar ve büyük bir ticaret hacmine sahip olsa da, gittikçe gerilemeye başlayan Uygur Kağanlığı'nın artık çöküş sürecine girişinin görüldüğü dönemdir. Bu dönemde iç çekişmeler ve suikast planları kağanlığın büyük siyasi krizler yaşamasına neden olmuştur. 
+      </div> <a href="#" class="blog-slider__button">Ekranı Kaydır</a> 
+     </div> 
+    </div> 
+    <div class="blog-slider__item swiper-slide"> 
+     <div class="blog-slider__img"> 
+      <img src="https://r.resimlink.com/WVCaMHwobRY.jpg" alt=""> 
+     </div> 
+     <div class="blog-slider__content"> <span class="blog-slider__code">?</span> 
+      <div class="blog-slider__title">
+        Külüğ Beg 
+      </div> 
+      <div class="blog-slider__text">
+        Külüg Beg veya Kalı Tigin, 832-839 yılları arasında Uygur Kağanlığı'nı yöneten hükümdar. Hükümdarlık adı "Ay Tengride Kut Bulmış Alp Külüg Bilge Kağan"dır. Tahta geçtikten sonra bir yıl sonra Çin imparatoru Külüg'ü tebrik için Uygur başkentine bir heyet göndermiştir. Ayrıca 833 yılının nisan ayında Çin sarayında yayımlanan bir fermanda Külüg Bey, ileriyi görmekte muktedir, Çin için güvenilir bir dost ve becerikli bir kağan olarak anlatılmaktadır.Bunun aksi bir şekilde, Çin ile yürüttüğü çok yakın politikalar nedeniyle kendi yurttaşları tarafından tasdik edilmemiş, suikast planı ile tahttan indirilmek istenmiş, bu başarılı olmayınca ordu içerisinden isyan eden birliklerin Ordu-balık'ı kuşatması sonucu intihar etmiştir. Bu durum, muhtemelen Miran Betikleri'nde, kendisinden bir kağan olarak değil, bir bey olarak bahsedilmesinin nedenidir. 
+      </div> <a href="#" class="blog-slider__button">Ekranı Kaydır</a> 
+     </div> 
+    </div> 
+    <div class="blog-slider__item swiper-slide"> 
+     <div class="blog-slider__img"> 
+      <img src="https://r.resimlink.com/WVCaMHwobRY.jpg" alt=""> 
+     </div> 
+     <div class="blog-slider__content"> <span class="blog-slider__code">?</span> 
+      <div class="blog-slider__title">
+        Üge Kapan 
+      </div> 
+      <div class="blog-slider__text">
+        Üge Kağan, 839-845 ya da 847 arasında Uygur Kağanlığı'nı yöneten Uygur kağanıdır. Tarihçilere göre Üge, son meşru Uygur kağanıdır.Yaşadığı dönemde, Uygur kağanlığı çöküş devresini tamamlayıp tamamıyla yıkılma evresine girmiştir. 
+      </div> <a href="#" class="blog-slider__button">Ekranı Kaydır</a> 
+     </div> 
+    </div> 
+    <div class="blog-slider__item swiper-slide"> 
+     <div class="blog-slider__img"> 
+      <img src="https://r.resimlink.com/WVCaMHwobRY.jpg" alt=""> 
+     </div> 
+     <div class="blog-slider__content"> <span class="blog-slider__code">?</span> 
+      <div class="blog-slider__title">
+        Ormaz 
+      </div> 
+      <div class="blog-slider__text">
+        Ormaz ya da transkripte hâliyle Ormïzt, Çin kaynaklarında Enyan, Üge Kağan'ın çağdaşı olarak yaşayan Uygur tiginidir. Son meşru Uygur Kağan'ı Üge ile sürekli bir çekişme hâlinde olmuştur. Ormaz, kendisine rakip olarak gördüğü Üge'yi öldürmek için Kırgızlar ve Kürebir Türkleriyle ittifaklar kurmuştur. Çin, Üge'nin Çin topraklarına yerleşmesine izin vermediyse de, Ormaz'a bu hak Çin'in farklı bölgelerine dağıtılarak yerleşmeleri ve Çince soyadlar kullanmaları şartlarını kabul etmeleri yoluyla verilmiştir. Üge Kağan'ın 847'de Altay Dağları'nda Ormaz'ın da bulunduğu koalisyon tarafından öldürülmesiyle, Uygur Kağanlığı tamamen sona ermiş; Ormaz hiçbir zaman meşru bir Uygur kağanı olamamıştır. Tarihçilere göre son meşru Uygur kağanı Üge'dir. 
+      </div> <a href="#" class="blog-slider__button">Ekranı Kaydır</a> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="blog-slider__pagination"></div> 
+  </div> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script> 
+  <script src="script.js"></script> 
+ 
+<script type="text/javascript" id="dcoder_script">var swiper = new Swiper('.blog-slider', {
+    spaceBetween: 30,
+    effect: 'fade',
+    loop: true,
+    mouseWheel: {
+        invert: false,
+    },
+    // autoHeight: true
+    pagination: {
+        el: '.blog-slider__pagination',
+        clickable: true,
+    }
+});i</script></body></html>
